@@ -1,7 +1,7 @@
 Summary:	Client and server for sending messages to a host's logged in users
 Name:		rwall
 Version:	0.17
-Release:	%mkrel 11
+Release:	%mkrel 12
 License:	BSD
 Group:		System/Servers
 Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/daemons/netkit-rwall-%version.tar.bz2
@@ -16,7 +16,7 @@ The rwall command sends a message to all of the users logged into a specified
 host.  Actually, your machine's rwall client sends the message to the rwall
 daemon running on the specified host, and the rwall daemon relays the message
 to all of the users logged in to that host.  The rwall daemon is run from
-/etc/inetd.conf and is disabled by default on Mandrakelinux systems (it can be
+/etc/inetd.conf and is disabled by default on Mandriva Linux systems (it can be
 very annoying to keep getting all those messages when you're trying to play
 Quake--I mean trying to get some work done).
 
