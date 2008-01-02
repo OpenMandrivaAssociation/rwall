@@ -9,6 +9,7 @@ Source1:	rwalld.init
 Patch0:		netkit-rwalld-0.10-banner.patch
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The rwall command sends a message to all of the users logged into a specified
