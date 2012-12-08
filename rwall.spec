@@ -1,7 +1,7 @@
 Summary:	Client and server for sending messages to a host's logged in users
 Name:		rwall
 Version:	0.17
-Release:	%mkrel 19
+Release:	%mkrel 21
 License:	BSD
 Group:		System/Servers
 Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/daemons/netkit-rwall-%version.tar.bz2
@@ -66,4 +66,61 @@ rm -rf %{buildroot}
 %{_mandir}/man8/rwalld.8*
 %{_mandir}/man1/rwall.1*
 
+
+
+
+%changelog
+* Thu May 05 2011 Oden Eriksson <oeriksson@mandriva.com> 0.17-19mdv2011.0
++ Revision: 669465
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 0.17-18mdv2011.0
++ Revision: 607385
+- rebuild
+
+* Mon Mar 15 2010 Oden Eriksson <oeriksson@mandriva.com> 0.17-17mdv2010.1
++ Revision: 520212
+- rebuilt for 2010.1
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.17-16mdv2010.0
++ Revision: 426968
+- rebuild
+
+* Fri Dec 19 2008 Oden Eriksson <oeriksson@mandriva.com> 0.17-15mdv2009.1
++ Revision: 316188
+- rebuild
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 0.17-14mdv2009.0
++ Revision: 225342
+- rebuild
+
+* Wed Mar 05 2008 Oden Eriksson <oeriksson@mandriva.com> 0.17-13mdv2008.1
++ Revision: 179480
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sun Sep 16 2007 Thierry Vignaud <tv@mandriva.org> 0.17-12mdv2008.0
++ Revision: 87639
+- s/Mandrake/Mandriva/
+
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 0.17-11mdv2007.1
++ Revision: 145467
+- Import rwall
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 0.17-11mdv2007.1
+- use the %%mrel macro
+- bunzip patches
+
+* Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 0.17-10mdk
+- Rebuild
+
+* Sat Aug 21 2004 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.17-9mdk
+- fix typo in init script
+- quiet rpmlint
 
