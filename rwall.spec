@@ -1,5 +1,3 @@
-%define _disable_ld_no_undefined 1
-
 Summary:	Client and server for sending messages to a host's logged in users
 Name:		rwall
 Version:	0.17
@@ -34,7 +32,7 @@ a specified host machine.
 %build
 %serverbuild
 CC="gcc" CFLAGS="$RPM_OPT_FLAGS" ./configure
-%make
+%make LIBS="-ltirpc"
 
 %install
 rm -rf %{buildroot}
