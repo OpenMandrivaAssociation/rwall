@@ -1,3 +1,4 @@
+%define debug_package %{nil}
 Summary:	Client and server for sending messages to a host's logged in users
 Name:		rwall
 Version:	0.17
