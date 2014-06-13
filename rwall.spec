@@ -2,7 +2,7 @@
 Summary:	Client and server for sending messages to a host's logged in users
 Name:		rwall
 Version:	0.17
-Release:	26
+Release:	27
 License:	BSD
 Group:		System/Servers
 Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/daemons/netkit-rwall-%version.tar.bz2
