@@ -1,0 +1,13 @@
+[Unit]
+Description=Write Messages to Users Currently Logged in Server
+Requires=network.target rpcbind.service
+After=syslog.target network.target rpcbind.service
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/rpc.rwalld -n
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
+
