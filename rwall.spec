@@ -10,6 +10,7 @@ Source1:	rwalld.service
 Patch0:		netkit-rwalld-0.10-banner.patch
 Patch2:		netkit-rwall-0.17-strip.patch
 Patch4:		netkit-rwall-0.17-droppriv.patch
+BuildRequires:	make
 BuildRequires:	tirpc-devel
 
 %description
